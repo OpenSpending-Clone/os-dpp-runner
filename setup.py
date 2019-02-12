@@ -19,7 +19,7 @@ def read(*paths):
 
 # Prepare
 PACKAGE = 'dpp_runner'
-NAME = PACKAGE.replace('_', '-')
+NAME = 'os-dpp-runner'
 INSTALL_REQUIRES = [
     'datapackage-pipelines>=1.6.6',
     'flask',
@@ -40,10 +40,11 @@ setup(
     tests_require=[],
     zip_safe=False,
     long_description=README,
+    long_description_content_type="text/markdown",
     description=README.split('\n')[0][2:],
-    author='Adam Kariv',
-    author_email='adam.kariv@gmail.com',
-    url='https://github.com/akariv/dpp-runner',
+    author='OpenSpending',
+    author_email='info@openspending.org',
+    url='https://github.com/openspending/os-dpp-runner',
     license='MIT',
     keywords=[
         'data',
